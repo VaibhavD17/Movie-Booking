@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Font/Roboto-Black.ttf);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Font/Roboto-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Font/Roboto-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Font/Roboto-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Font/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Font/Roboto-Thin.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header {
+    background-color: black;
+    color: rgb(0, 229, 255);
+    display: flex;
+}
+
+header .container {
+    display: flex;
+    position: relative;
+}
+
+.timetext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+
+}
+
+header .container img {
+    width: 15%;
+    height: 100px;
+    object-fit: cover;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+.booking_detail {
+    width: 15%;
+    background: black;
+    height: 100vh;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+.booking_detail>nav>ul>li>a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    color: rgb(0, 229, 255);
+    font-size: 35px;
+    margin: 40px 0;
+}
+
+.booking_detail>nav>ul>li>a:hover {
+    background-color: rgb(0, 229, 255);
+    color: black;
+}
+
+body input[type="text"],
+[type="file"] {
+    width: 48%;
+    padding: 10px 8px;
+    margin: 10px 20px 10px 0;
+    font-family: "Roboto";
+    font-size: 25px;
+    outline: none;
+    border-radius: 4px;
+    border: 0.5px solid rgb(0, 229, 255);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+body input[type="submit"] {
+    background-color: rgb(0, 229, 255);
+    border: none;
+    width: 55%;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 8px 0;
+    margin: 20px 0;
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+
+body input[type="submit"]:hover {
+    background-color: black;
+    color: rgb(0, 229, 255);
+    border: none;
+}
+
+body select {
+    width: 60%;
+    border: 0.5px solid black;
+    border-radius: 6px;
+    padding: 9px 3px;
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+body input[type="time"] {
+    width: 20%;
+    margin: 5px 5px 0 0;
+    font-family: 'Roboto';
+    border: 0.5px solid black;
+    border-radius: 7px;
+    padding: 9px 3px;
+    font-size: 25px;
+}
+
+.admindata {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking_data {
+    width: 80%;
+    padding: 20px 0;
+
+}
+
+body table {
+    border: none;
+    font-size: 30px;
+}
+
+body table th,
+td {
+    border: 0.5px solid black;
+    padding: 3px 5px;
+}
+
+.cinemasubmenu form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body button {
+    border: none;
+    font-family: 'Roboto';
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: white;
+}
+
+.table_data {
+    background-color: rgb(0, 229, 255);
+    color: black;
+}
+
+.table_heading {
+    background-color: black;
+    color: rgb(0, 229, 255);
+}
+
+.button_edit,
+.button_delete {
+    padding: 3px 5px;
+}
+
+
+.button_delete i {
+    display: block;
+    font-size: 30px;
+}
+
+.addButton {
+    background-color: green;
+    padding: 2px 10px;
+    margin-right: 15px;
+    color: white;
+    font-size: 30px;
+}
+
+.removeButton {
+    background-color: red;
+    padding: 1px 14px;
+    color: white;
+    font-size: 30px;
+}
+
+#poster_img {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 32%;
+    right: 16%;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.moviepost_style {
+    /* width: 23%; */
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 16px 10px;
+    background-color: black;
+}
+
+.buttontag {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 5px;
+}
+
+.moviepost_style img {
+    width: 300px;
+    height: 300px;
+    /* border-radius: 5px; */
+    margin: 10px 0;
+}
+
+.homeheading {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 229, 255, 0.5);
+    margin: 50px 0;
+    padding: 20px 0;
+}
+
+.h3heading {
+    color: white;
+    margin: 15px 0;
+    font-size: 35px;
+    box-shadow: 0 0 10px 0 rgba(0, 229, 255, 0.5);
+    text-transform: capitalize;
+}
+
+.descrip {
+    color: rgb(0, 229, 255);
+    font-size: 25px;
+}
+
+.Pdata {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;
+}
+
+.movie #disp {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#user #disp {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+#user .moviepost_style {
+    display: inline-block;
+    /* width: 23%; */
+    /* height: 500px; */
+    margin: 20px 20px 0 20px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 0;
+}
+
+#user .moviepost_style:hover {
+    transform: scale(1.05);
+}
+
+#user .moviepost_style img {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+}
+
+
+#user .h3heading {
+    color: white;
+    margin: 0;
+    font-size: 35px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    /*  */
+    background-color: black;
+    padding: 15px 0;
+    text-transform: capitalize;
+    border-radius: 0 0 15px 15px;
+    font-style: italic;
+}
+
+.movie_time {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 20px;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.movieTime {
+    display: inline-block;
+    border: 1px solid rgb(245, 4, 4);
+    padding: 10px 25px;
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(245, 4, 4);
+    border-radius: 5px;
+}
+
+.movieTime:hover {
+    border: 1px solid #4ABD5D;
+    color: #4ABD5D;
+}
+
+.ShowTime {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+#user .timemoviepost_style h4 {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+#user .timemoviepost_style h3 {
+    color: rgb(0, 229, 255);
+    font-size: 30px;
+}
+
+#user .timemoviepost_style {
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 16px 10px;
+    background-color: black;
+}
+
+#user .timemoviepost_style img {
+    width: 150px;
+    height: 150px;
+}
+
+#user .timemoviepost_style a button {
+    background-color: rgb(0, 229, 255);
+    color: black;
+}
+
+#user .seat_button button {
+    width: 80px;
+    height: 60px;
+    margin: 10px;
+    background-color: rgb(132, 133, 134, 0.5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.seatUserData {
+    display: flex;
+}
+
+.seatDisp {
+    width: 70%;
+}
+
+#user #price {
+    /* height: 100px; */
+    width: 30%;
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    /* display: flex; */
+    /* background-color: rgb(206, 211, 59); */
+    text-align: center;
+}
+
+.jsPrice {
+    text-align: center;
+    margin: 30px;
+}
+
+
+.jsPrice>h3 {
+    font-size: 30px;
+    color: white;
+    margin: 20px;
+}
+
+.jsPrice>h2 {
+    color: rgb(0 136 244);
+    margin: 20px;
+}
+
+.seatPrice {
+    height: 100vh;
+    border: 1px solid white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.seatSubmit {
+    /* border: 1px solid black; */
+    padding: 10px 20px;
+    margin: 30px 0 0 0;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.seatSubmit:hover {
+    background-color: rgb(0, 229, 255);
+    color: black;
+}
+
+.thanks {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(0, 229, 255);
+    background-color: black;
+    border-radius: 100px 100px 0px 0px;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.thanks h2 {
+    font-size: 50px;
+}
+
+
+.thankyou {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 100px 0;
+    border-radius: 0 0 20px 20px;
+    background-color: rgb(0, 229, 255);
+}
+
+.thankyou h1 {
+    font-size: 80px;
+    font-style: italic;
+}
+
+.cinemadiv {
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cinemadiv h2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 50px;
+    font-style: italic;
+    color: rgb(126 7 7);
+}
+
+.cinemadiv img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* .cinemadiv  */
+
+.cinemadiv:hover {
+    transform: scale(1.05);
+}
+
+#cinema_list a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    margin: 30px;
+}

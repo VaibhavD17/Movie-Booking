@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/cinemaAdmin.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="Images/movie-logo.jpg" alt="">
+            <div class="timetext">
+                <h2>CINEMA</h2>
+            </div>
+        </div>
+    </header>
+
+    <section id="admin">
+        <div class="container">
+            <div class="admindata">
+                <div class="booking_detail">
+                    <nav>
+                        <ul>
+                            <li><a href="cinemaAdmin.html">
+                                    <h5>CINEMA</h5>
+                                </a></li>
+                            <li><a href="movieAdmin.html">
+                                    <h5>MOVIE</h5>
+                                </a></li>
+                            <li><a href="timeAdmin.html">
+                                    <h5>TIME</h5>
+                                </a></li>
+                            <li><a href="seatAdmin.html">
+                                    <h5>SEAT</h5>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="booking_data">
+                    <div class="submenu cinemasubmenu">
+                        <form action="" id="cinemaForm">
+                            <input type="text" name="cinema_name" id="cinema_name" placeholder="Cinema Name">
+                            <br><br>
+                            <input type="text" name="cinema_description" id="cinema_description"
+                                placeholder="Cinema Description">
+                            <br><br>
+                            <input type="text" name="cinema_phone" id="cinema_phone" placeholder="Cinema phone number">
+                            <br><br>
+                            <input type="text" name="cinema_address" id="cinema_address" placeholder="Cinema address">
+                            <br><br>
+                            <input type="text" name="cinema_email" id="cinema_email" placeholder="Cinema email">
+                            <br><br>
+
+                            <input type="submit" id="submit">
+                        </form>
+
+                        <div id="disp">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="JS/cinemaAdmin.js"></script>
+
+</body>
+
+</html>
